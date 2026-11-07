@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <script>document.documentElement.classList.add("is-loading");setTimeout(function(){document.documentElement.classList.remove("is-loading")},8000)</script>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Unbounded:wght@400..900&family=Space+Grotesk:wght@400..700&family=JetBrains+Mono:wght@400..800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+  <title>AZRAEL — SAMP Scripts</title>
+  <meta name="description" content="azrael ร้านจำหน่ายสคริปต์ SAMP เน้นคุณภาพและ performance">
+</head>
+<body data-page="home">
+  <div class="preloader" id="preloader" role="status" aria-label="กำลังโหลด">
+    <div class="loader">
+      <svg class="loader-ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="track" cx="50" cy="50" r="46"/><circle class="arc" cx="50" cy="50" r="46"/></svg>
+      <img src="logo.png" alt="azrael">
+    </div>
+  </div>
+  <div id="site-header"></div>
+  <main>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">A Z R A E L</p>
+        <h1>PREMIUM<br>SAMP SCRIPTS</h1>
+        <p class="lead">ร้านจำหน่ายสคริปต์ SAMP คุณภาพสูง ออกแบบมาเพื่อความเสถียรและประสิทธิภาพ พร้อมระบบที่ใช้งานง่ายจาก AZRAEL</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="shop.html">ดูสินค้า →</a>
+          <a class="btn btn-ghost" href="https://discord.gg/F9pxtW4GM5" target="_blank" rel="noopener">ติดต่อเรา</a>
+        </div>
+      </div>
+      <a class="hero-visual" id="heroSlide" href="shop.html" aria-label="สินค้าแนะนำ">
+        <span class="hero-badge" id="heroBadge">DX</span>
+        <strong id="heroName"></strong>
+        <span id="heroPrice"></span>
+        <span class="hero-controls">
+          <button id="heroPrev" aria-label="ก่อนหน้า">‹</button>
+          <span id="heroCount" aria-live="polite">01/03</span>
+          <button id="heroNext" aria-label="ถัดไป">›</button>
+        </span>
+      </a>
+    </section>
+
+    <div class="marquee" role="region" aria-label="โลโก้"><div class="marquee-track" id="marqueeTrack"></div></div>
+
+    <section class="section" id="products">
+      <h2 class="section-title">FEATURED<br>PRODUCTS</h2>
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section class="section" id="team">
+      <h2 class="section-title">OUR<br>TEAM</h2>
+      <div class="team">
+        <article class="member">
+          <span class="avatar">R</span>
+          <h3>Rayz</h3>
+          <p class="muted handle">@azrael.dev</p>
+          <p class="role-main">Owner</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
